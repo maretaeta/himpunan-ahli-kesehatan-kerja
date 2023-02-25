@@ -3,15 +3,13 @@ import logo from '../assets/pakki.png'
 
 import {
     FaFacebook,
-    FaGithub,
     FaInstagram,
     FaTwitter,
-    FaTwitch,
 } from 'react-icons/fa'
 
 const Footer = () => {
   return (
-    <div className='w-full mt-24 bg-green-800 text-gray-300 py-y px-2'>
+    <div className='w-full mt-24 bg-green-600 text-gray-300 py-y px-2'>
         <div className='max-w-[1240px] mx-auto grid grid-cols-2 md:grid-cols-5 border-b-2 border-green-500 py-8'>
          <div className='w-full bg-white pl-10 pt-3'>< img src={logo} alt="" /></div>
             <div className='pl-10'>
