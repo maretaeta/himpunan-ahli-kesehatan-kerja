@@ -21,8 +21,8 @@ function Number ({n}) {
 
 const Hero = () => {
   return (
-    <div name='home' className='w-full h-screen bg-zinc-200 flex flex-col justify-between'>
-        <div className='grid md:grid-cols-2 max-w-[1240px] mx-auto'>
+    <div name='home' className='container mx-auto max-w-7xl w-full text h-screen bg-zinc-200 flex flex-col justify-between'>
+        <div className='grid md:grid-cols-2 max-w-max mx-auto'>
             <div className='flex flex-col justify-center sm:items- w-full px-2 py-8'>
                 <h1 className='py-3 text-5xl md:text-6xl font-bold'>Perhimpunan Ahli Kesehatan Kerja Indonesia</h1>
                 <button className='bg-green-500 border-green-500 py-3 px-6 sm:w-[60%]'>Daftar</button>
@@ -30,7 +30,7 @@ const Hero = () => {
             <div>
                 <img className='xl:w-full  pt-24' src={bgImg} alt="/" />
             </div>
-            <div className='absolute flex flex-col py-8 md:min-w-[1100px] bottom-[-7%]
+            <div className='absolute flex flex-col py-8 md:min-w-[1100px] bottom-[-30%] md:bottom-[-10%]
             mx-1 md:left-1/2 transform md:-translate-x-1/2 bg-zinc-200
             border border-slate-300 rounded-xl text-center shadow-xl'>
                 <div className='flex justify-between flex-wrap px-3'>
