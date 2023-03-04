@@ -1,9 +1,34 @@
 import React, {useState} from 'react';
 import { Link, animateScroll as scroll, } from 'react-scroll'
 import logo from '../assets/pakki.png'
-
+import { motion } from "framer-motion";
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
 
+let easeing = [0.6,-0.05,0.01,0.99];
+const stagger = {
+  animate:{
+    transition:{
+      delayChildren:0.4,
+      staggerChildren:0.2,
+      staggerDirection:1
+    }
+  }
+}
+const header={
+    initial:{
+      y:-60,
+      opacity:0,
+      transition:{duration:0.05, ease:easeing}
+    },
+    animate:{
+      y:0,
+      opacity:1,
+      animation:{
+        duration:0.6,
+        ease:easeing
+      }
+    }
+  };
 const Navbar = () => {
     const [nav, setNav] = useState(false)
     const handleClick = () => setNav(!nav)
@@ -11,9 +36,9 @@ const Navbar = () => {
     const handleClose =()=> setNav(!nav)
 
   return (
-    <div className='w-screen z-20 bg-zinc-200 justify-between fixed drop-shadow-lg px-16 py-3'>
-      <div className='flex justify-between items-center w-full'>
-        <div className='w-20'>< img src={logo} alt="" /></div>
+    <motion.div initial='initial' animate='animate' className='w-screen z-20 bg-zinc-200 justify-between fixed drop-shadow-lg px-16 py-3'>
+      <motion.div variants={header} className='flex justify-between items-center w-full'>
+        <motion.div variants={header} className='w-20'>< img src={logo} alt="" /></motion.div>
         <div>
           <ul className='hidden md:flex font-bold'>
             <li><Link to="home" smooth={true} duration={500}>Home</Link></li>
@@ -32,7 +57,7 @@ const Navbar = () => {
             {!nav ? <MenuIcon className='w-5' /> : <XIcon className='w-5' />}
           
         </div>
-      </div>
+      </motion.div>
       <ul className={!nav ? 'hidden' : ' bg-zinc-200 w-full px-8'}>
           <li className='border-b-2 border-zinc-300 w-full'><Link onClick={handleClose} to="home" smooth={true} duration={500}>Home</Link></li>
           <li className='border-b-2 border-zinc-300 w-full'><Link onClick={handleClose} to="about" smooth={true} offset={-200} duration={500}>About</Link></li>
@@ -45,7 +70,7 @@ const Navbar = () => {
             <button className='px-8 py-3'>Sign Up</button>
         </div>
       </ul>
-    </div>
+    </motion.div>
   );
 };
 
