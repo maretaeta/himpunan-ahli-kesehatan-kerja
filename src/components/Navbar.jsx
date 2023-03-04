@@ -37,7 +37,7 @@ const Navbar = () => {
           <li className='border-b-2 border-zinc-300 w-full'><Link onClick={handleClose} to="home" smooth={true} duration={500}>Home</Link></li>
           <li className='border-b-2 border-zinc-300 w-full'><Link onClick={handleClose} to="about" smooth={true} offset={-200} duration={500}>About</Link></li>
           <li className='border-b-2 border-zinc-300 w-full'><Link onClick={handleClose} to="support" smooth={true} offset={-50} duration={500}>News</Link></li>
-          <li className='border-b-2 border-zinc-300 w-full'><Link onClick={handleClose} to="platforms" smooth={true} offset={-100} duration={500}>Event</Link></li>
+          <li className='border-b-2 border-zinc-300 w-full'><Link onClick={handleClose} to="event" smooth={true} offset={-100} duration={500}>Event</Link></li>
          
 
         <div className='flex flex-col my-4'>
