@@ -11,7 +11,7 @@ const Navbar = () => {
     const handleClose =()=> setNav(!nav)
 
   return (
-    <div className='w-screen z-10 bg-zinc-200 justify-between fixed drop-shadow-lg px-16 py-3'>
+    <div className='w-screen z-20 bg-zinc-200 justify-between fixed drop-shadow-lg px-16 py-3'>
       <div className='flex justify-between items-center w-full'>
         <div className='w-20'>< img src={logo} alt="" /></div>
         <div>

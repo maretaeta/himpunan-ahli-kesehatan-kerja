@@ -30,14 +30,16 @@ const Hero = () => {
             <div>
                 <img className='xl:w-full  pt-24' src={bgImg} alt="/" />
             </div>
-            <div className='absolute flex flex-col py-8 bottom-[-40%] md:bottom-[-15%]
-            mx-6 md:left-1/2 transform md:-translate-x-1/2 md:mx-auto bg-zinc-200
-            border border-slate-300 rounded-xl text-center shadow-xl'>
-                <div className='flex justify-between flex-wrap gap-7'>
-                    <div><p className='pl-7'><CloudUploadIcon className='h-6 text-green-500' /></p><div className='text-3xl font-bold'><Number n={67}/></div><p className=' px-4 py- text-slate-500'>Daerah</p></div>
-                    <div><p className='pl-8'><CloudUploadIcon className='h-6 text-green-500' /></p><div className='text-3xl font-bold'><Number n={230}/></div><p className=' px-4 py- text-slate-500'>Cabang</p></div>
-                    <div><p className='pl-8'><CloudUploadIcon className='h-6 text-green-500' /></p><div className='text-3xl font-bold'><Number n={576}/></div><p className=' px-4 py- text-slate-500'>Ranting</p></div>
-                    <div><p className='pl-8'><CloudUploadIcon className='h-6 text-green-500' /></p><div className='text-3xl font-bold'><Number n={70890}/></div><p className=' px-4 py- text-slate-500'>Anggota</p></div>
+            <div className='grid grid-cols-1 justify-items-center mx-2 z-10 mt-[-4rem]'>
+                <div className='container items-center grid grid-cols-1 md:max-w-6xl absolute py-8
+                mx-6 md:left-1/2 transform md:-translate-x-1/2 md:mx-auto bg-zinc-200
+                border border-slate-300 rounded-xl text-center shadow-xl'>
+                    <div className='flex justify-between flex-wrap mx-3'>
+                        <div><p className='pl-7'><CloudUploadIcon className='h-6 text-green-500' /></p><div className='md:text-3xl text-xl font-bold'><Number n={67}/></div><p className='md:px-4 px-2 py- text-slate-500'>Daerah</p></div>
+                        <div><p className='pl-8'><CloudUploadIcon className='h-6 text-green-500' /></p><div className='md:text-3xl text-xl font-bold'><Number n={230}/></div><p className='md:px-4 px-2 py- text-slate-500'>Cabang</p></div>
+                        <div><p className='pl-8'><CloudUploadIcon className='h-6 text-green-500' /></p><div className='md:text-3xl text-xl font-bold'><Number n={576}/></div><p className='md:px-4 px-2 py- text-slate-500'>Ranting</p></div>
+                        <div><p className='pl-8'><CloudUploadIcon className='h-6 text-green-500' /></p><div className='md:text-3xl  text-xl font-bold'><Number n={7089}/></div><p className='md:px-4 px-2 py- text-slate-500'>Anggota</p></div>
+                    </div>
                 </div>
             </div>
         </div>
