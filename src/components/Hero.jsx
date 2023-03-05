@@ -80,7 +80,7 @@ const Hero = () => {
             <div>
                 <img className='xl:w-full md:pt-24' src={bgImg} alt="/" />
             </div>
-            <motion.div variants={fadeInUp} className='grid grid-cols-1 justify-items-center z-10 mt-[-4rem]'>
+            <div className='grid grid-cols-1 justify-items-center z-10 mt-[-4rem]'>
                 <div className='container items-center grid grid-cols-1 md:max-w-6xl absolute py-8
                 mx-6 md:left-1/2 transform md:-translate-x-1/2 md:mx-auto bg-zinc-200
                 border border-slate-300 rounded-xl text-center shadow-xl'>
@@ -91,7 +91,7 @@ const Hero = () => {
                         <div><p className='pl-7'><CloudUploadIcon className='h-6 text-green-500' /></p><div className='md:text-3xl  text-xl font-bold'><Number n={7089}/></div><p className='md:px-4 px-2 py- text-slate-500'>Anggota</p></div>
                     </div>
                 </div>
-            </motion.div>
+            </div>
         </motion.div>
     </motion.div>
   )

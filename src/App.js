@@ -6,6 +6,8 @@ import Navbar from './components/Navbar'
 import Pricing from './components/Pricing';
 import Support from './components/Support';
 import { motion } from "framer-motion";
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 
 
 let easeing = [0.6,-0.05,0.01,0.99];
@@ -53,6 +55,13 @@ const header={
   };
 
 function App() {
+
+  Aos.init({
+    duration: 2800,
+    offset: 0,
+
+  });
+
   return (
     <>
       <Navbar />
