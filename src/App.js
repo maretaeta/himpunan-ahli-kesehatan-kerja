@@ -57,7 +57,7 @@ const header={
 function App() {
 
   Aos.init({
-    duration: 2800,
+    duration: 1800,
     offset: 0,
 
   });
