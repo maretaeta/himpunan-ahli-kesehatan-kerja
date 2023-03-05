@@ -52,12 +52,7 @@ const hoverEffect = {
 const Event = () => {
   return (
     <motion.div name='event' className='max-w-[1240px] px-5 mx-auto items-center'>
-      <motion.h1 
-        initial={{y:20, opacity:0}}
-        animate={{y:0, opacity:1}}
-        exit={{opacity:0}}
-        transition={{duration:.5, delay:1.8}}
-        className='py-16 text-5xl font-bold text-center'>Event</motion.h1>
+      <h1 className='py-16 text-5xl font-bold text-center'>Event</h1>
       <motion.div variants={container} initial="hidden" exit="exit" whileInView="show" viewport={{once:false}} className=' grid sm:grid-cols-2 lg:grid-cols-3 pt-4 gap-4'>  
         <motion.div  class="max-w-[1240px] bg-white border border-gray-200 rounded-lg shadow bg-green-600 border-green-500">
             <a href="#">
