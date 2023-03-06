@@ -59,6 +59,7 @@ function App() {
   Aos.init({
     duration: 1800,
     offset: 0,
+    once: true,
 
   });
 
@@ -66,10 +67,9 @@ function App() {
     <>
       <Navbar />
       <Hero />
-      <motion.div variants={header}><About /></motion.div>
+      <About />
       <Support />
       <Event />
-      <Pricing />
       <Footer />
     </>
   );
