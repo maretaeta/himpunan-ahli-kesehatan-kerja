@@ -1,11 +1,12 @@
 import React from "react";
 import logo from "../assets/pakki.png";
+import phone from "../assets/call-outline.svg";
 
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer class="bg-neutral-100 text-center text-neutral-600 mt-16 bg-zinc-200 lg:text-left">
+    <footer class="text-center text-neutral-600 mt-16 bg-zinc-200 lg:text-left">
       <div class="flex items-center justify-center border-b-2 border-neutral-200 p-6 dark:border-neutral-500 lg:justify-between">
         <div class="mr-12 hidden lg:block">
           <span>Get connected with us on social networks:</span>
@@ -77,9 +78,9 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <div class="mx-6 py-10 text-center md:text-left">
-        <div class="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-          <div class="">
+      <div class="mx-6 pb-10 text-center md:text-left">
+        <div class="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div class="m-5 ">
             <h6 class="mb-4 md:flex items-center justify-center font-semibold uppercase md:justify-start md:grid-cols-2">
               <img
                 src={logo}
@@ -142,20 +143,12 @@ const Footer = () => {
               </a>
             </p>
           </div> */}
-          <div>
+          <div className="pt-6">
             <h6 class="mb-4 flex justify-center font-semibold uppercase md:justify-start">
               Contact
             </h6>
             <p class="mb-4 flex items-center justify-center md:justify-start">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                class="mr-3 h-5 w-5"
-              >
-                <path d="M11.47 3.84a.75.75 0 011.06 0l8.69 8.69a.75.75 0 101.06-1.06l-8.689-8.69a2.25 2.25 0 00-3.182 0l-8.69 8.69a.75.75 0 001.061 1.06l8.69-8.69z" />
-                <path d="M12 5.432l8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 01-.75-.75v-4.5a.75.75 0 00-.75-.75h-3a.75.75 0 00-.75.75V21a.75.75 0 01-.75.75H5.625a1.875 1.875 0 01-1.875-1.875v-6.198a2.29 2.29 0 00.091-.086L12 5.43z" />
-              </svg>
+              <img className="w-5 mr-3 text-neutral-600" src={phone}></img>
               0800 4521 800 50
             </p>
             <p class="mb-4 flex items-center justify-center md:justify-start">
