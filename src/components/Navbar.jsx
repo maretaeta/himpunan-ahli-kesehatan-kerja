@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
 
 let easeing = [0.6,-0.05,0.01,0.99];
+
 const stagger = {
   animate:{
     transition:{
@@ -40,18 +41,26 @@ const Navbar = () => {
       <motion.div variants={header} className='flex justify-between items-center w-full'>
         <motion.div variants={header} className='w-20'>< img src={logo} alt="" /></motion.div>
         <div>
-          <ul className='hidden md:flex font-bold'>
-            <li className='hover:text-green-500'><Link to="home" smooth={true} duration={500}>Home</Link></li>
-            <li className='hover:text-green-500'><Link to="about" smooth={true} offset={-200} duration={500}>About</Link></li>
-            <li className='hover:text-green-500'><Link to="support" smooth={true} offset={-50} duration={500}>News</Link></li>
-            <li className='hover:text-green-500'><Link to="event" smooth={true} offset={-100} duration={500}>Event</Link></li>
+          <ul className='hidden md:flex font-bold gap-5'>
+            <li className='hover:text-green-500 relative cursor-pointer transition-all 
+            before:absolute before:-bottom-2 before:left-0 before:w-0 before:h-1 before:rounded-full before:opacity-0 before:transition-all
+            before:duration-500 before:bg-green-500 hover:before:w-full hover:before:opacity-100'><Link to="home" smooth={true} duration={500}>Home</Link></li>
+            <li className='hover:text-green-500 relative cursor-pointer transition-all 
+            before:absolute before:-bottom-2 before:left-0 before:w-0 before:h-1 before:rounded-full before:opacity-0 before:transition-all
+            before:duration-500 before:bg-green-500 hover:before:w-full hover:before:opacity-100'><Link to="about" smooth={true} offset={-200} duration={500}>About</Link></li>
+            <li className='hover:text-green-500 relative cursor-pointer transition-all 
+            before:absolute before:-bottom-2 before:left-0 before:w-0 before:h-1 before:rounded-full before:opacity-0 before:transition-all
+            before:duration-500 before:bg-green-500 hover:before:w-full hover:before:opacity-100'><Link to="support" smooth={true} offset={-50} duration={500}>News</Link></li>
+            <li className='hover:text-green-500 relative cursor-pointer transition-all 
+            before:absolute before:-bottom-2 before:left-0 before:w-0 before:h-1 before:rounded-full before:opacity-0 before:transition-all
+            before:duration-500 before:bg-green-500 hover:before:w-full hover:before:opacity-100'><Link to="event" smooth={true} offset={-100} duration={500}>Event</Link></li>
             </ul>
         </div>
         <div className='hidden md:flex pr-4'>
-          <button className='border-none bg-transparent text-black mr-4'>
+          <button className='border-green-500 px-7 py-2 h-11 bg-transparent text-green-500 mr-4'>
             Sign In
           </button>
-          <button className='px-8 py-3 bg-green-500 border-green-500'>Sign Up</button>
+          <button className='px-7 py-2 h-11 bg-green-500 border-green-500'>Sign Up</button>
         </div>
         <div className='md:hidden mr-4' onClick={handleClick}>
             {!nav ? <MenuIcon className='w-5' /> : <XIcon className='w-5' />}
