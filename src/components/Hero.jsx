@@ -69,11 +69,11 @@ function Number ({n}) {
 
 const Hero = () => {
   return (
-    <div name='home' className='bg-zinc-200 pt-20 md:pt-0'>
+    <div name='home' className='bg-zinc-200 pt-20 md:pt-12'>
         <div className='grid md:grid-cols-2 max-w-7xl md:mx-auto mx-5'>
             <div className='flex flex-col justify-center sm:items- w-full px-2 py-8'>
                 <div data-aos="fade-right" className='py-3 text-5xl md:text-6xl font-bold text-center md:text-left'>Perhimpunan Ahli Kesehatan Kerja Indonesia</div>
-                <div className='grid grid-cols-1 justify-items-center sm:justify-items-start' >
+                <div className='grid grid-cols-1 justify-items-center sm:justify-items-start md:pt-3' >
                     <button data-aos="zoom-in" className='bg-green-500 border-green-500 md: py-3 md:px-16 px-9'>Daftar</button>
                 </div>
             </div>

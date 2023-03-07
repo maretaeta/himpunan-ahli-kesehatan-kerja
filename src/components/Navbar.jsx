@@ -40,8 +40,8 @@ const Navbar = () => {
     <motion.div initial='initial' animate='animate' className='w-screen z-20 bg-zinc-200 justify-between fixed drop-shadow-lg px-16 py-3'>
       <motion.div variants={header} className='flex justify-between items-center w-full'>
         <motion.div variants={header} className='w-20'>< img src={logo} alt="" /></motion.div>
-        <div>
-          <ul className='hidden md:flex font-bold gap-5'>
+        <div className='lg:text-lg'>
+          <ul className='hidden md:flex font-bold gap-3 md:gap-0'>
             <li className='hover:text-green-500 relative cursor-pointer transition-all 
             before:absolute before:-bottom-2 before:left-0 before:w-0 before:h-1 before:rounded-full before:opacity-0 before:transition-all
             before:duration-500 before:bg-green-500 hover:before:w-full hover:before:opacity-100'><Link to="home" smooth={true} duration={500}>Home</Link></li>
