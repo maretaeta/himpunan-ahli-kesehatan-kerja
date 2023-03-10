@@ -5,6 +5,7 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Pricing from "./components/Pricing";
 import Support from "./components/Support";
+import Faq from "./components/Faq";
 import { motion } from "framer-motion";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -68,6 +69,7 @@ function App() {
       <About />
       <Support />
       <Event />
+      <Faq />
       <Footer />
     </>
   );
