@@ -18,15 +18,15 @@ function Faq() {
         answer:'Lorem ipsum dolor sit amet consectetur adipisicing elit. nihil doloribus voluptate ea molestiae! Non quod, similique omnis maiores blanditiis voluptatem pariatur eaque aut quia praesentium accusantium, iusto, asperiores at.',
         },
         {
-        question :'Bagaimana saya menghubungi Perhimpunan Ahli Kesehatan Kerja Indonesia?',
+        question :'Apa saja layanan dari Perhimpunan Ahli Kesehatan Kerja Indonesia?',
         answer:'Lorem ipsum dolor sit amet consectetur adipisicing elit. nihil doloribus voluptate ea molestiae! Non quod, similique omnis maiores blanditiis voluptatem pariatur eaque aut quia praesentium accusantium, iusto, asperiores at.',
             },
         {
-        question :'Bagaimana saya menghubungi Perhimpunan Ahli Kesehatan Kerja Indonesia?',
+        question :'Mengapa saya harus menggunakan web PAKKI ini?',
         answer:'Lorem ipsum dolor sit amet consectetur adipisicing elit. nihil doloribus voluptate ea molestiae! Non quod, similique omnis maiores blanditiis voluptatem pariatur eaque aut quia praesentium accusantium, iusto, asperiores at.',
         },
         {
-        question :'Bagaimana saya menghubungi Perhimpunan Ahli Kesehatan Kerja Indonesia?',
+        question :'Cara mendaftar web PAKKI',
         answer:'Lorem ipsum dolor sit amet consectetur adipisicing elit. nihil doloribus voluptate ea molestiae! Non quod, similique omnis maiores blanditiis voluptatem pariatur eaque aut quia praesentium accusantium, iusto, asperiores at.',
         }
     ];
