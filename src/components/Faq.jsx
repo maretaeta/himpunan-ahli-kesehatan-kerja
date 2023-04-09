@@ -37,6 +37,16 @@ function Faq() {
     },
   ];
 
+<<<<<<< HEAD
+
+  return (    
+    <div name="Faq" className='mx-7 py-20'>
+      <div className=" mx-auto gap-10">
+          <div className='text-center md:text-center'>
+          <h1 className='pb-5 pt-10 text-4xl font-bold text-center'>Frequently Asked Question</h1>
+          <p className='text-sm md:mr-16 pb-7'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit explicabo quibusdam, et aspernatur similique, voluptas nobis, incidunt dignissimos accusamus distinctio repudiandae fugit aliquam nulla totam. Debitis error assumenda mollitia dolorum!</p>
+          </div>
+=======
   return (
     <div className="mx-7 py-20">
       <div className=" mx-auto gap-10">
@@ -51,6 +61,7 @@ function Faq() {
             error assumenda mollitia dolorum!
           </p>
         </div>
+>>>>>>> 6588fc2715f89468949f5023805ef2e67ef9910f
       </div>
       <div>
         {cardIsi.map((faq_info, i) => (
