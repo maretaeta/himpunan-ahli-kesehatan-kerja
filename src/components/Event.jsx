@@ -7,19 +7,12 @@ const Event = () => {
   const [count, setCount] = useState(3);
   const [noOfElement, setnoOfElement] = useState(3);
 
-  const showShowOrLess = () => {
-    setCount < setCount;
-  };
   const loadMore = () => {
     setCount(6);
   };
   console.log(data.cardData);
   // const slice = data.cardData.slice(0, noOfElement);
 
-<<<<<<< HEAD
-  return (
-    <div name="Event" className="max-w-[1240px] px-5 mx-auto items-center">
-=======
   const scrollUp = () => {
     setCount(3);
   };
@@ -27,7 +20,6 @@ const Event = () => {
 
   return (
     <div name="event" className="max-w-[1240px] px-5 mx-auto items-center">
->>>>>>> 6588fc2715f89468949f5023805ef2e67ef9910f
       <h1 className="pb-5 pt-28 text-5xl font-bold text-center">Event</h1>
       <div className="flex mx-auto justify-between">
         <div className="grid sm:grid-cols-2 md:grid-cols-3 pt-2 gap-4 items-center">
@@ -43,11 +35,7 @@ const Event = () => {
                   </a>
                   <div class="p-5">
                     <a href="#">
-<<<<<<< HEAD
-                      <h5 class="mb-2 text-2xl font-bold tracking-tight text-green-500">
-=======
                       <h5 class="mb-2 text-2xl font-bold tracking-tight text-black">
->>>>>>> 6588fc2715f89468949f5023805ef2e67ef9910f
                         {item.title}
                       </h5>
                     </a>
@@ -81,21 +69,6 @@ const Event = () => {
           })}
         </div>
       </div>
-<<<<<<< HEAD
-      <div className="pt-10">
-        <button
-          className="btn-more py-3 px-10 grid justify-items-center mx-auto"
-          onClick={() => loadMore()}
-        >
-          {" "}
-          Load More
-        </button>
-      </div>
-    </div>
-  );
-};
-
-=======
       <div className="pt-10 flex flex-row gap-2 items-end justify-end">
         <button
           className="rounded-sm h-7 w-8 px-2 items-center text-center "
@@ -141,5 +114,4 @@ const Event = () => {
   );
 };
 
->>>>>>> 6588fc2715f89468949f5023805ef2e67ef9910f
 export default Event;
