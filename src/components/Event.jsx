@@ -13,8 +13,18 @@ const Event = () => {
   console.log(data.cardData);
   // const slice = data.cardData.slice(0, noOfElement);
 
+<<<<<<< HEAD
   return (
     <div name="Event" className="max-w-[1240px] px-5 mx-auto items-center">
+=======
+  const scrollUp = () => {
+    setCount(3);
+  };
+  console.log(data.cardData);
+
+  return (
+    <div name="event" className="max-w-[1240px] px-5 mx-auto items-center">
+>>>>>>> 6588fc2715f89468949f5023805ef2e67ef9910f
       <h1 className="pb-5 pt-28 text-5xl font-bold text-center">Event</h1>
       <div className="flex mx-auto justify-between">
         <div className="grid sm:grid-cols-2 md:grid-cols-3 pt-2 gap-4 items-center">
@@ -30,7 +40,11 @@ const Event = () => {
                   </a>
                   <div class="p-5">
                     <a href="#">
+<<<<<<< HEAD
                       <h5 class="mb-2 text-2xl font-bold tracking-tight text-green-500">
+=======
+                      <h5 class="mb-2 text-2xl font-bold tracking-tight text-black">
+>>>>>>> 6588fc2715f89468949f5023805ef2e67ef9910f
                         {item.title}
                       </h5>
                     </a>
@@ -64,6 +78,7 @@ const Event = () => {
           })}
         </div>
       </div>
+<<<<<<< HEAD
       <div className="pt-10">
         <button
           className="btn-more py-3 px-10 grid justify-items-center mx-auto"
@@ -77,4 +92,51 @@ const Event = () => {
   );
 };
 
+=======
+      <div className="pt-10 flex flex-row gap-2 items-end justify-end">
+        <button
+          className="rounded-sm h-7 w-8 px-2 items-center text-center "
+          onClick={() => loadMore()}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="w-4 h-4"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+            />
+          </svg>
+        </button>
+
+        <button
+          className="rounded-sm h-7 w-8 px-2 items-center justify-center text-center"
+          onClick={() => scrollUp()}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="w-4 h-4"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M4.5 15.75l7.5-7.5 7.5 7.5"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  );
+};
+
+>>>>>>> 6588fc2715f89468949f5023805ef2e67ef9910f
 export default Event;
