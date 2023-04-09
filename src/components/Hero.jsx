@@ -69,7 +69,7 @@ function Number({ n }) {
 const Hero = () => {
   return (
     <div name="home" className="bg-zinc-200 pt-20 md:pt-12">
-      <div className="grid md:grid-cols-2 max-w-7xl md:mx-auto mx-5">
+      <div className="grid md:grid-cols-2 max-w-7xl md:mx-auto mx-5 lg:mx-7">
         <div className="flex flex-col justify-center sm:items-cente w-full px-2 py-8">
           <div
             data-aos="fade-right"
