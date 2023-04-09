@@ -7,6 +7,9 @@ const Event = () => {
   const [count, setCount] = useState(3);
   const [noOfElement, setnoOfElement] = useState(3);
 
+  const showShowOrLess = () => {
+    setCount < setCount;
+  };
   const loadMore = () => {
     setCount(6);
   };
