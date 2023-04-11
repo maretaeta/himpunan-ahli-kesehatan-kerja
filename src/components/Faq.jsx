@@ -39,7 +39,7 @@ function Faq() {
 
 
   return (    
-    <div name="Faq" className='mx-7 py-20'>
+    <div name="Faq" className='mx-7 py-9'>
       <div className=" mx-auto gap-10">
           <div className='text-center md:text-center'>
           <h1 className='pb-5 pt-10 text-4xl font-bold text-center'>Frequently Asked Question</h1>

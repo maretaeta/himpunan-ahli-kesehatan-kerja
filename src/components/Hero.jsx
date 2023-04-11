@@ -9,7 +9,7 @@ import {
   ServerIcon,
 } from "@heroicons/react/solid";
 
-import bgImg from "../assets/cek.png";
+import bgImg from "../assets/img.png";
 
 let easeing = [0.6, -0.05, 0.01, 0.99];
 const stagger = {
@@ -68,9 +68,9 @@ function Number({ n }) {
 
 const Hero = () => {
   return (
-    <div name="home" className="bg-white pt-20 md:pt-16">
-      <div className="grid md:grid-cols-2 max-w-7xl md:mx-4 mx-5 lg:mx-7">
-        <div className="flex flex-col justify-center sm:items-cente w-full px-2 py-8">
+    <div name="home" className="bg-[#F6F6F6]  pt-20 md:pt-12">
+      <div className="grid md:grid-cols-2 max-w-7xl md:mx-auto mx-5 lg:mx-7">
+        <div className="flex flex-col justify-center sm:items-cente w-full px-2 py-8 md:p-8">
           <div
             data-aos="fade-right"
             className="py-3 text-4xl md:text-6xl font-bold text-center md:text-left"
@@ -80,7 +80,7 @@ const Hero = () => {
           <div className="grid grid-cols-1 justify-items-center sm:justify-items-start md:pt-3 md:pb-6 h-9">
             <button
               data-aos="zoom-in"
-              className="bg-green-500 border-green-500 md:py-3 md:px-16 px-9"
+              className="bg-[#007936]  md:py-3 md:px-16 px-9"
             >
               Daftar
             </button>
@@ -92,45 +92,45 @@ const Hero = () => {
         <div className="grid grid-cols-1 justify-items-center z-10 mt-[-4rem] lg:w-32">
           <div
             className="container items-center grid grid-cols-1 md:max-w-6xl absolute py-8
-                mx-6 md:left-1/2 transform md:-translate-x-1/2 md:mx-auto bg-zinc-100
-                border border-slate-200 rounded-xl text-center shadow-xl"
+                mx-6 md:left-1/2 transform md:-translate-x-1/2 md:mx-auto bg-[#007936]
+                rounded-xl text-center shadow-xl"
           >
             <div className="flex justify-between flex-wrap mx-3">
               <div>
                 <p className="pl-6">
-                  <CloudUploadIcon className="h-6 text-green-500" />
+                  <CloudUploadIcon className="h-6 text-green-400" />
                 </p>
-                <div className="md:text-3xl text-xl font-bold">
+                <div className="md:text-3xl text-xl font-bold text-[#F6F6F6] ">
                   <Number n={67} />
                 </div>
-                <p className="md:px-4 px-2 py- text-slate-500">Daerah</p>
+                <p className="md:px-4 px-2 py- text-slate-300">Daerah</p>
               </div>
               <div>
                 <p className="pl-7">
-                  <CloudUploadIcon className="h-6 text-green-500" />
+                  <CloudUploadIcon className="h-6 text-green-400" />
                 </p>
-                <div className="md:text-3xl text-xl font-bold">
+                <div className="md:text-3xl text-xl font-bold text-[#F6F6F6] ">
                   <Number n={230} />
                 </div>
-                <p className="md:px-4 px-2 py- text-slate-500">Cabang</p>
+                <p className="md:px-4 px-2 text-slate-300">Cabang</p>
               </div>
               <div>
                 <p className="pl-6">
-                  <CloudUploadIcon className="h-6 text-green-500" />
+                  <CloudUploadIcon className="h-6 text-green-400" />
                 </p>
-                <div className="md:text-3xl text-xl font-bold">
+                <div className="md:text-3xl text-xl font-bold text-[#F6F6F6]">
                   <Number n={576} />
                 </div>
-                <p className="md:px-4 px-2 py- text-slate-500">Ranting</p>
+                <p className="md:px-4 px-2 text-slate-300">Ranting</p>
               </div>
               <div>
                 <p className="pl-7">
-                  <CloudUploadIcon className="h-6 text-green-500" />
+                  <CloudUploadIcon className="h-6 text-green-400" />
                 </p>
-                <div className="md:text-3xl  text-xl font-bold">
+                <div className="md:text-3xl  text-xl font-bold text-[#F6F6F6] ">
                   <Number n={7089} />
                 </div>
-                <p className="md:px-4 px-2 py- text-slate-500">Anggota</p>
+                <p className="md:px-4 px-2 text-slate-300">Anggota</p>
               </div>
             </div>
           </div>

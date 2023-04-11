@@ -40,7 +40,7 @@ const Navbar = () => {
     <motion.div
       initial="initial"
       animate="animate"
-      className="w-screen z-20 bg-white justify-between fixed drop-shadow-lg px-10 py-3"
+      className="w-screen z-20 bg-[#F6F6F6] justify-between fixed drop-shadow-lg px-10 py-3"
     >
       <motion.div
         variants={header}
@@ -87,15 +87,7 @@ const Navbar = () => {
                 Event
               </Link>
             </li>
-            {/* <li
-              className="hover:text-green-500 relative cursor-pointer transition-all 
-            before:absolute before:-bottom-2 before:left-0 before:w-0 before:h-1 before:rounded-full before:opacity-0 before:transition-all
-            before:duration-500 before:bg-green-500 hover:before:w-full hover:before:opacity-100"
-            >
-              <Link to="Location" smooth={true} offset={-100} duration={500}>
-                Location
-              </Link>
-            </li> */}
+
             <li
               className="hover:text-green-500 relative cursor-pointer transition-all 
             before:absolute before:-bottom-2 before:left-0 before:w-0 before:h-1 before:rounded-full before:opacity-0 before:transition-all
@@ -107,19 +99,17 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <div className="hidden md:flex md:gap-3">
-          <button className="border-green-500 md:w-24 h-10 bg-transparent text-green-500 ">
+        <div className="hidden md:flex gap-2">
+          <button className="border-[#007936] w-24 h-10 bg-transparent text-[#007936] mr-4">
             Sign In
           </button>
-          <button className=" h-10 md:w-24  bg-green-500 border-green-500">
-            Sign Up
-          </button>
+          <button className="w-24 h-10 bg-[#007936]">Sign Up</button>
         </div>
         <div className="md:hidden mr-4" onClick={handleClick}>
           {!nav ? <MenuIcon className="w-5" /> : <XIcon className="w-5" />}
         </div>
       </motion.div>
-      <ul className={!nav ? "hidden" : " bg-zinc-200 w-full px-8 "}>
+      <ul className={!nav ? "hidden" : " bg-[#F6F6F6] w-full px-8 "}>
         <li className="border-b-2 border-zinc-300 w-full hover:text-green-500">
           <Link onClick={handleClose} to="home" smooth={true} duration={500}>
             Home
@@ -158,17 +148,7 @@ const Navbar = () => {
             Event
           </Link>
         </li>
-        <li className="border-b-2 border-zinc-300 w-full hover:text-green-500">
-          <Link
-            onClick={handleClose}
-            to="Location"
-            smooth={true}
-            offset={-100}
-            duration={500}
-          >
-            Location
-          </Link>
-        </li>
+
         <li className="border-b-2 border-zinc-300 w-full hover:text-green-500">
           <Link
             onClick={handleClose}
@@ -182,10 +162,10 @@ const Navbar = () => {
         </li>
 
         <div className="flex flex-col my-4">
-          <button className="bg-transparent text-green-500 px-8 py-3 mb-4">
+          <button className="bg-transparent text-[#007936] border-[#007936] px-8 py-3 mb-4">
             Sign In
           </button>
-          <button className="px-8 py-3">Sign Up</button>
+          <button className="px-8 py-3 bg-[#007936]">Sign Up</button>
         </div>
       </ul>
     </motion.div>
