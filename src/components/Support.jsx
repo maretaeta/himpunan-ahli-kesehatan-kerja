@@ -14,8 +14,7 @@ const Support = () => {
       
       <div className='max-w-[1240px] mx-auto text-white relative'>
           <div className='px-4 py-12'>
-              <h2 data-aos="flip-up" data-aos-offset="400" className='text-3xl pt-8 text-slate-300 uppercase text-center'>Support</h2>
-              <h3 data-aos-offset="400" data-aos="fade-right" className='text-5xl font-bold py-6 text-center'>Finding the right team</h3>
+              <h3 data-aos-offset="400" data-aos="fade-right" className='text-5xl font-bold py-6 text-center'>What You Get ?</h3>
               <p data-aos-offset="400" data-aos="fade-left" className='py-4 text-3xl text-slate-300 text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. In repudiandae veritatis ratione error tenetur, voluptates architecto possimus ad! Omnis minima ea quidem quisquam unde beatae, minus illo et cum vel?</p>
           </div>
 
@@ -33,7 +32,7 @@ const Support = () => {
               <div data-aos-offset="400" data-aos="fade-up" className='bg-white rounded-xl shadow-2xl'>
                   <div className='p-8'>
                       <SupportIcon className='w-16 p-4 bg-green-500 text-white rounded-lg mt-[-4rem]' />
-                      <h3 className='font-bold text-2xl my-6'>PENGEMBANGAN</h3>
+                      <h3 className='font-bold text-2xl my-6'>FITUR TERBARU</h3>
                       <p className='text-gray-600 text-xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi provident iure placeat blanditiis ea sint earum hic iste quibusdam exercitationem.</p>
                   </div>
                   <div className='bg-slate-100 pl-8 py-4'>

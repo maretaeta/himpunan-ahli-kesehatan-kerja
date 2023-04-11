@@ -40,7 +40,7 @@ const Navbar = () => {
     <motion.div
       initial="initial"
       animate="animate"
-      className="w-screen z-20 bg-zinc-200 justify-between fixed drop-shadow-lg px-16 py-3"
+      className="w-screen z-20 bg-zinc-200 justify-between fixed drop-shadow-lg px-3 lg:px-12 py-3"
     >
       <motion.div
         variants={header}
@@ -96,22 +96,13 @@ const Navbar = () => {
                 Location
               </Link>
             </li>
-            <li
-              className="hover:text-green-500 relative cursor-pointer transition-all 
-            before:absolute before:-bottom-2 before:left-0 before:w-0 before:h-1 before:rounded-full before:opacity-0 before:transition-all
-            before:duration-500 before:bg-green-500 hover:before:w-full hover:before:opacity-100"
-            >
-              <Link to="Faq" smooth={true} offset={-100} duration={500}>
-                FAQ
-              </Link>
-            </li>
           </ul>
         </div>
         <div className="hidden md:flex pr-4">
-          <button className="border-green-500 px-7 py-2 h-11 bg-transparent text-green-500 mr-4">
+          <button className="border-green-500 px-4 py-2 h-11 bg-transparent text-green-500 mr-4">
             Sign In
           </button>
-          <button className="px-7 py-2 h-11 bg-green-500 border-green-500">
+          <button className="px-4 py-2 h-11 bg-green-500 border-green-500">
             Sign Up
           </button>
         </div>
