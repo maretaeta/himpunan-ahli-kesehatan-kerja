@@ -35,9 +35,9 @@ const Event = () => {
                       alt=""
                     />
                   </a>
-                  <div class="p-5 absolute top-40 lg:top-28 w-full h-full mx-auto">
+                  <div class="p-5 absolute top-28 lg:top-28 md:top-12 w-full h-full mx-auto">
                     <a href="#">
-                      <h5 class="mb-2 text-xl font-bold tracking-tight text-black">
+                      <h5 class="mb-2 text-xl md:text-lg font-bold tracking-tight text-black">
                         {item.title}
                       </h5>
                     </a>

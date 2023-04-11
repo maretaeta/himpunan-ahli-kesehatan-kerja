@@ -3,7 +3,10 @@ import React from "react";
 
 const Location = () => {
   return (
-    <div name="Location" className="lg:flex lg:justify-between grid justify-items-center max-w-6xl py-16 mt-10 mx-5 lg:mx-auto">
+    <div
+      name="Location"
+      className="lg:flex lg:justify-between grid justify-items-center max-w-6xl py-16 mt-10 mx-5 lg:mx-auto lg:p-5"
+    >
       <div className="mb-5">
         <h1 className="font-bold text-4xl text-center md:text-left">
           Where to find us?

@@ -40,7 +40,7 @@ const Navbar = () => {
     <motion.div
       initial="initial"
       animate="animate"
-      className="w-screen z-20 bg-zinc-200 justify-between fixed drop-shadow-lg px-16 py-3"
+      className="w-screen z-20 bg-white justify-between fixed drop-shadow-lg px-10 py-3"
     >
       <motion.div
         variants={header}
@@ -49,7 +49,7 @@ const Navbar = () => {
         <motion.div variants={header} className="w-20">
           <img src={logo} alt="" />
         </motion.div>
-        <div className="lg:text-lg">
+        <div className="lg:text-lg ">
           <ul className="hidden md:flex font-bold gap-3 md:gap-0">
             <li
               className="hover:text-green-500 relative cursor-pointer transition-all 
@@ -87,7 +87,7 @@ const Navbar = () => {
                 Event
               </Link>
             </li>
-            <li
+            {/* <li
               className="hover:text-green-500 relative cursor-pointer transition-all 
             before:absolute before:-bottom-2 before:left-0 before:w-0 before:h-1 before:rounded-full before:opacity-0 before:transition-all
             before:duration-500 before:bg-green-500 hover:before:w-full hover:before:opacity-100"
@@ -95,7 +95,7 @@ const Navbar = () => {
               <Link to="Location" smooth={true} offset={-100} duration={500}>
                 Location
               </Link>
-            </li>
+            </li> */}
             <li
               className="hover:text-green-500 relative cursor-pointer transition-all 
             before:absolute before:-bottom-2 before:left-0 before:w-0 before:h-1 before:rounded-full before:opacity-0 before:transition-all
@@ -107,11 +107,11 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <div className="hidden md:flex pr-4">
-          <button className="border-green-500 px-7 py-2 h-11 bg-transparent text-green-500 mr-4">
+        <div className="hidden md:flex md:gap-3">
+          <button className="border-green-500 md:w-24 h-10 bg-transparent text-green-500 ">
             Sign In
           </button>
-          <button className="px-7 py-2 h-11 bg-green-500 border-green-500">
+          <button className=" h-10 md:w-24  bg-green-500 border-green-500">
             Sign Up
           </button>
         </div>
