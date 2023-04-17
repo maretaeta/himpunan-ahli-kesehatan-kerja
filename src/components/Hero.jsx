@@ -68,8 +68,8 @@ function Number({ n }) {
 
 const Hero = () => {
   return (
-    <div name="home" className="bg-zinc-200 pt-20 md:pt-12">
-      <div className="grid md:grid-cols-2 max-w-7xl  mx-5 lg:mx-7">
+    <div name="home" className="bg-zinc-200">
+      <div className="grid md:grid-cols-2 max-w-7xl mx-5 lg:mx-7">
         <div className="flex flex-col justify-center sm:items-cente w-full px-2 py-8">
           <div
             data-aos="fade-right"
@@ -87,15 +87,15 @@ const Hero = () => {
           </div>
         </div>
         <div data-aos="fade-left">
-          <img className="xl:w-full md:pt-24" src={bgImg} alt="/" />
+          <img className="xl:w-full " src={bgImg} alt="/" />
         </div>
         <div className="grid grid-cols-1 justify-items-center z-10 mt-[-4rem]">
           <div
-            className="container items-center grid grid-cols-1 md:max-w-6xl absolute py-8
+            className="container items-center grid grid-cols-1 md:max-w-6xl absolute md:my-0 sm:my-3 py-8
                 mx-6 md:left-1/2 transform md:-translate-x-1/2 md:mx-auto bg-white
-                border border-slate-300 rounded-xl text-center shadow-xl"
+                border border-slate-300 rounded-xl text-center shadow-xl "
           >
-            <div className="flex justify-between flex-wrap mx-3">
+            <div className="flex justify-between flex-wrap mx-3 ">
               <div>
                 <p className="pl-6">
                   <CloudUploadIcon className="h-6 text-green-500" />

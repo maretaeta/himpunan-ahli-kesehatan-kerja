@@ -1,14 +1,12 @@
-import About from "./components/About";
-import Event from "./components/Event";
-import Footer from "./components/Footer";
-import Hero from "./components/Hero";
-import Navbar from "./components/Navbar";
-import Support from "./components/Support";
-import Faq from "./components/Faq";
-import Location from "./components/Location";
 import Aos from "aos";
 import "aos/dist/aos.css";
-
+import Home from "./components/Pages/Home";
+import Detail from "./components/Pages/Detail";
+import Login from "./components/Pages/Login";
+import Registered from "./components/Pages/Registered";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import { Route, Router, Routes, BrowserRouter } from "react-router-dom";
 
 function App() {
   Aos.init({
@@ -18,16 +16,16 @@ function App() {
   });
 
   return (
-    <>
+    <BrowserRouter>
       <Navbar />
-      <Hero />
-      <About />
-      <Support />
-      <Event />
-      <Location />
-      <Faq />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Login" element={<Login />} />
+        <Route path="/Registered" element={<Registered />} />
+        <Route path="/Detail" element={<Detail />} />
+      </Routes>
       <Footer />
-    </>
+    </BrowserRouter>
   );
 }
 

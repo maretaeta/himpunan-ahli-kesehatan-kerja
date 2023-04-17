@@ -2,8 +2,6 @@ import React from "react";
 import logo from "../assets/pakki.png";
 import phone from "../assets/call-outline.svg";
 
-import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
-
 const Footer = () => {
   return (
     <footer class="text-center text-neutral-600 mt-16 bg-zinc-200 lg:text-left">
