@@ -2,14 +2,14 @@ import React from "react";
 
 const Location = () => {
   return (
-    <div data-aos-offset="400"
-    data-aos="fade-up" name="Location" className="lg:flex lg:justify-between grid justify-items-center max-w-6xl py-16 lg:gap-20 mt-10 mx-5 lg:mx-auto">
+    <div name="Location" className="lg:flex lg:justify-between grid justify-items-center max-w-6xl py-16 lg:gap-20 mt-10 mx-5 lg:mx-auto">
       <div className="mb-5">
         <h1 className="font-bold text-4xl text-center md:text-left">
           Our Location
         </h1>
         <h1 className="md:text-left text-center">
-        2, Jl. Merpati Prima No.41, RT.2/RW.1, West Tanjung, Jagakarsa, South Jakarta City, Jakarta 12530{" "}
+          2, Jl. Merpati Prima No.41, RT.2/RW.1, West Tanjung, Jagakarsa, South
+          Jakarta City, Jakarta 12530{" "}
         </h1>
       </div>
       <iframe
@@ -24,6 +24,5 @@ const Location = () => {
     </div>
   );
 };
-
 
 export default Location;

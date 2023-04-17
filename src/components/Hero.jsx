@@ -9,7 +9,7 @@ import {
   ServerIcon,
 } from "@heroicons/react/solid";
 
-import bgImg from "../assets/cek.png";
+import bgImg from "../assets/img.png";
 
 let easeing = [0.6, -0.05, 0.01, 0.99];
 const stagger = {
@@ -77,10 +77,10 @@ const Hero = () => {
           >
             Perhimpunan Ahli Kesehatan Kerja Indonesia
           </div>
-          <div className="grid grid-cols-1 justify-items-center sm:justify-items-start md:pt-3">
+          <div className="grid grid-cols-1 justify-items-center sm:justify-items-start md:pt-3 md:pb-6 h-9">
             <button
               data-aos="zoom-in"
-              className="bg-green-500 border-green-500 md: py-3 md:px-16 px-9"
+              className="bg-[#007936]  md:py-3 md:px-16 px-9"
             >
               Daftar
             </button>
@@ -89,7 +89,7 @@ const Hero = () => {
         <div data-aos="fade-left">
           <img className="xl:w-full " src={bgImg} alt="/" />
         </div>
-        <div className="grid grid-cols-1 justify-items-center z-10 mt-[-4rem]">
+        <div className="grid grid-cols-1 justify-items-center z-10 mt-[-4rem] lg:w-32">
           <div
             className="container items-center grid grid-cols-1 md:max-w-6xl absolute md:my-0 sm:my-3 py-8
                 mx-6 md:left-1/2 transform md:-translate-x-1/2 md:mx-auto bg-white
@@ -98,39 +98,39 @@ const Hero = () => {
             <div className="flex justify-between flex-wrap mx-3 ">
               <div>
                 <p className="pl-6">
-                  <CloudUploadIcon className="h-6 text-green-500" />
+                  <CloudUploadIcon className="h-6 text-green-400" />
                 </p>
-                <div className="md:text-3xl text-xl font-bold">
+                <div className="md:text-3xl text-xl font-bold text-[#F6F6F6] ">
                   <Number n={67} />
                 </div>
-                <p className="md:px-4 px-2 py- text-slate-500">Daerah</p>
+                <p className="md:px-4 px-2 py- text-slate-300">Daerah</p>
               </div>
               <div>
                 <p className="pl-7">
-                  <CloudUploadIcon className="h-6 text-green-500" />
+                  <CloudUploadIcon className="h-6 text-green-400" />
                 </p>
-                <div className="md:text-3xl text-xl font-bold">
+                <div className="md:text-3xl text-xl font-bold text-[#F6F6F6] ">
                   <Number n={230} />
                 </div>
-                <p className="md:px-4 px-2 py- text-slate-500">Cabang</p>
+                <p className="md:px-4 px-2 text-slate-300">Cabang</p>
               </div>
               <div>
                 <p className="pl-6">
-                  <CloudUploadIcon className="h-6 text-green-500" />
+                  <CloudUploadIcon className="h-6 text-green-400" />
                 </p>
-                <div className="md:text-3xl text-xl font-bold">
+                <div className="md:text-3xl text-xl font-bold text-[#F6F6F6]">
                   <Number n={576} />
                 </div>
-                <p className="md:px-4 px-2 py- text-slate-500">Ranting</p>
+                <p className="md:px-4 px-2 text-slate-300">Ranting</p>
               </div>
               <div>
                 <p className="pl-7">
-                  <CloudUploadIcon className="h-6 text-green-500" />
+                  <CloudUploadIcon className="h-6 text-green-400" />
                 </p>
-                <div className="md:text-3xl  text-xl font-bold">
+                <div className="md:text-3xl  text-xl font-bold text-[#F6F6F6] ">
                   <Number n={7089} />
                 </div>
-                <p className="md:px-4 px-2 py- text-slate-500">Anggota</p>
+                <p className="md:px-4 px-2 text-slate-300">Anggota</p>
               </div>
             </div>
           </div>

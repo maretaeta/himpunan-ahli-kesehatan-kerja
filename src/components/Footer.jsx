@@ -4,8 +4,8 @@ import phone from "../assets/call-outline.svg";
 
 const Footer = () => {
   return (
-    <footer class="text-center text-neutral-600 mt-16 bg-zinc-200 lg:text-left">
-      <div class="flex items-center justify-center border-b-2 border-neutral-200 p-6 dark:border-neutral-500 lg:justify-between"></div>
+    <footer class="text-center text-neutral-600 mt-16 bg-[#F6F6F6] lg:text-left">
+      <div class="flex items-center justify-center  p-6 dark:border-neutral-500 lg:justify-between"></div>
       <div class="mx-6 pb-10 text-center md:text-left">
         <div class="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           <div class="m-5 ">
@@ -127,7 +127,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div class="text-white p-6 text-center bg-green-500">
+      <div class="text-white p-6 text-center bg-[#007936]">
         <span>© 2023 Copyright : PAKKI</span>
       </div>
     </footer>
