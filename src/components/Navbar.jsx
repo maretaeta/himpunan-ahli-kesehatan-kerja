@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link  } from "react-scroll";
+import { Link } from "react-scroll";
 import logo from "../assets/pakki.png";
 import { motion } from "framer-motion";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
@@ -42,14 +42,14 @@ const Navbar = () => {
     <motion.div
       initial="initial"
       animate="animate"
-      className="sticky top-0 z-20 bg-zinc-200 justify-between drop-shadow-lg px-16 py-3"
+      className="sticky top-0 z-20 bg-gray-100 justify-between drop-shadow-lg px-16 py-3"
     >
       <motion.div
         variants={header}
         className="flex justify-between items-center w-full"
       >
         <motion.div variants={header} className="w-20">
-          <img src={logo} alt="" onClick={() => handleClickHome()}/>
+          <img src={logo} alt="" onClick={() => handleClickHome()} />
         </motion.div>
         <div className="lg:text-lg ">
           <ul className="hidden md:flex font-bold gap-3 md:gap-0">
@@ -58,7 +58,12 @@ const Navbar = () => {
             before:absolute before:-bottom-2 before:left-0 before:w-0 before:h-1 before:rounded-full before:opacity-0 before:transition-all
             before:duration-500 before:bg-green-500 hover:before:w-full hover:before:opacity-100"
             >
-              <Link to="home" smooth={true} duration={500} onClick={() => handleClickHome()}>
+              <Link
+                to="home"
+                smooth={true}
+                duration={500}
+                onClick={() => handleClickHome()}
+              >
                 Home
               </Link>
             </li>
@@ -67,7 +72,13 @@ const Navbar = () => {
             before:absolute before:-bottom-2 before:left-0 before:w-0 before:h-1 before:rounded-full before:opacity-0 before:transition-all
             before:duration-500 before:bg-green-500 hover:before:w-full hover:before:opacity-100"
             >
-              <Link to="about" smooth={true} offset={-200} duration={500} onClick={() => handleClickHome()}>
+              <Link
+                to="about"
+                smooth={true}
+                offset={-200}
+                duration={500}
+                onClick={() => handleClickHome()}
+              >
                 About
               </Link>
             </li>
@@ -76,7 +87,13 @@ const Navbar = () => {
             before:absolute before:-bottom-2 before:left-0 before:w-0 before:h-1 before:rounded-full before:opacity-0 before:transition-all
             before:duration-500 before:bg-green-500 hover:before:w-full hover:before:opacity-100"
             >
-              <Link to="support" smooth={true} offset={-50} duration={500} onClick={() => handleClickHome()}>
+              <Link
+                to="support"
+                smooth={true}
+                offset={-50}
+                duration={500}
+                onClick={() => handleClickHome()}
+              >
                 Support
               </Link>
             </li>
@@ -85,7 +102,13 @@ const Navbar = () => {
             before:absolute before:-bottom-2 before:left-0 before:w-0 before:h-1 before:rounded-full before:opacity-0 before:transition-all
             before:duration-500 before:bg-green-500 hover:before:w-full hover:before:opacity-100"
             >
-              <Link to="event" smooth={true} offset={-100} duration={500} onClick={() => handleClickHome()}>
+              <Link
+                to="event"
+                smooth={true}
+                offset={-100}
+                duration={500}
+                onClick={() => handleClickHome()}
+              >
                 Event
               </Link>
             </li>
@@ -95,25 +118,37 @@ const Navbar = () => {
             before:absolute before:-bottom-2 before:left-0 before:w-0 before:h-1 before:rounded-full before:opacity-0 before:transition-all
             before:duration-500 before:bg-green-500 hover:before:w-full hover:before:opacity-100"
             >
-              <Link to="Location" smooth={true} offset={-100} duration={500} onClick={() => handleClickHome()}>
+              <Link
+                to="Location"
+                smooth={true}
+                offset={-100}
+                duration={500}
+                onClick={() => handleClickHome()}
+              >
                 Location
               </Link>
             </li>
           </ul>
         </div>
         <div className="hidden md:flex pr-4">
-          <button className="border-green-500 px-4 py-2 h-11 bg-transparent text-green-500 mr-4" onClick={() => handleClickRegis()}>
-            Registered
+          <button
+            className="border-[#007936]  px-4 py-2 h-11 bg-transparent text-[#007936] mr-4"
+            onClick={() => handleClickRegis()}
+          >
+            SigIn
           </button>
-          <button className="px-4 py-2 h-11 bg-green-500 border-green-500" onClick={() => handleClickLogin()}>
-            Log In
+          <button
+            className="px-4 py-2 h-11 bg-[#007936]"
+            onClick={() => handleClickLogin()}
+          >
+            LogIn
           </button>
         </div>
         <div className="md:hidden mr-4" onClick={handleClick}>
           {!nav ? <MenuIcon className="w-5" /> : <XIcon className="w-5" />}
         </div>
       </motion.div>
-      <ul className={!nav ? "hidden" : " bg-[#F6F6F6] w-full px-8 "}>
+      <ul className={!nav ? "hidden" : " bg-gray-100 w-full px-8 "}>
         <li className="border-b-2 border-zinc-300 w-full hover:text-green-500">
           <Link onClick={handleClose} to="home" smooth={true} duration={500}>
             Home

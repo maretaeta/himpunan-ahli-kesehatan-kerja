@@ -71,7 +71,7 @@ const App = () => {
   };
 
   return (
-    <div className="app shadow-xl mt-20 mx-auto flex justify-center max-w-md rounded-md py-5 bg-zinc-300">
+    <div className="app shadow-xl mt-20 mx-auto flex justify-center max-w-md rounded-md py-5 bg-gray-200">
       <form onSubmit={handleSubmit}>
         <h1 className="text-center text-2xl font-bold text-black">Register</h1>
         {inputs.map((input) => (
@@ -82,7 +82,9 @@ const App = () => {
             onChange={onChange}
           />
         ))}
-        <button className="mt-5 mx-auto flex py-1 px-3 text-xl ">Submit</button>
+        <button className="mt-5 mx-auto flex py-2 px-5 text-xl bg-[#007936] ">
+          Submit
+        </button>
       </form>
     </div>
   );
