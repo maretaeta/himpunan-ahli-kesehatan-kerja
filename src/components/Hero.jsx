@@ -68,7 +68,7 @@ function Number({ n }) {
 
 const Hero = () => {
   return (
-    <div name="home" className="bg-zinc-200">
+    <div name="home" className="bg-gray-100">
       <div className="grid md:grid-cols-2 max-w-7xl mx-5 lg:mx-7">
         <div className="flex flex-col justify-center sm:items-cente w-full px-2 py-8">
           <div
@@ -98,39 +98,39 @@ const Hero = () => {
             <div className="flex justify-between flex-wrap mx-3 ">
               <div>
                 <p className="pl-6">
-                  <CloudUploadIcon className="h-6 text-green-400" />
+                  <CloudUploadIcon className="h-6 text-green-600" />
                 </p>
-                <div className="md:text-3xl text-xl font-bold text-[#F6F6F6] ">
+                <div className="md:text-3xl text-xl font-bold text-gray-600 ">
                   <Number n={67} />
                 </div>
-                <p className="md:px-4 px-2 py- text-slate-300">Daerah</p>
+                <p className="md:px-4 px-2 py- text-slate-500">Daerah</p>
               </div>
               <div>
                 <p className="pl-7">
-                  <CloudUploadIcon className="h-6 text-green-400" />
+                  <CloudUploadIcon className="h-6 text-green-600" />
                 </p>
-                <div className="md:text-3xl text-xl font-bold text-[#F6F6F6] ">
+                <div className="md:text-3xl text-xl font-bold text-gray-600 ">
                   <Number n={230} />
                 </div>
-                <p className="md:px-4 px-2 text-slate-300">Cabang</p>
+                <p className="md:px-4 px-2 text-slate-500">Cabang</p>
               </div>
               <div>
                 <p className="pl-6">
-                  <CloudUploadIcon className="h-6 text-green-400" />
+                  <CloudUploadIcon className="h-6 text-green-600" />
                 </p>
-                <div className="md:text-3xl text-xl font-bold text-[#F6F6F6]">
+                <div className="md:text-3xl text-xl font-bold text-gray-600">
                   <Number n={576} />
                 </div>
-                <p className="md:px-4 px-2 text-slate-300">Ranting</p>
+                <p className="md:px-4 px-2 text-slate-500">Ranting</p>
               </div>
               <div>
                 <p className="pl-7">
-                  <CloudUploadIcon className="h-6 text-green-400" />
+                  <CloudUploadIcon className="h-6 text-green-600" />
                 </p>
-                <div className="md:text-3xl  text-xl font-bold text-[#F6F6F6] ">
+                <div className="md:text-3xl  text-xl font-bold text-gray-600">
                   <Number n={7089} />
                 </div>
-                <p className="md:px-4 px-2 text-slate-300">Anggota</p>
+                <p className="md:px-4 px-2 text-slate-500">Anggota</p>
               </div>
             </div>
           </div>

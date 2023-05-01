@@ -4,7 +4,7 @@ import phone from "../assets/call-outline.svg";
 
 const Footer = () => {
   return (
-    <footer class="text-center text-neutral-600 mt-16 bg-[#F6F6F6] lg:text-left">
+    <footer class="text-center text-neutral-600 mt-16 bg-gray-100 lg:text-left">
       <div class="flex items-center justify-center  p-6 dark:border-neutral-500 lg:justify-between"></div>
       <div class="mx-6 pb-10 text-center md:text-left">
         <div class="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-3">

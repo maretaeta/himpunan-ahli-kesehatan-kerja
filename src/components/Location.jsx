@@ -2,7 +2,10 @@ import React from "react";
 
 const Location = () => {
   return (
-    <div name="Location" className="lg:flex lg:justify-between grid justify-items-center max-w-6xl py-16 lg:gap-20 mt-10 mx-5 lg:mx-auto">
+    <div
+      name="Location"
+      className="lg:flex lg:justify-between grid justify-items-center max-w-6xl py-16 lg:gap-20 mt-10 mx-5 lg:mx-auto lg:p-8"
+    >
       <div className="mb-5">
         <h1 className="font-bold text-4xl text-center md:text-left">
           Our Location
