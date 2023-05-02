@@ -6,7 +6,7 @@ import Login from "./components/Pages/Login";
 import Registered from "./components/Pages/Registered";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import { Route, Router, Routes, BrowserRouter } from "react-router-dom";
+import { Route, Routes, BrowserRouter } from "react-router-dom";
 
 function App() {
   Aos.init({

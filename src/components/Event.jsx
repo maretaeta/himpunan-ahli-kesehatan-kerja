@@ -1,8 +1,14 @@
 import React, { useState } from "react";
 import data from "../components/data";
+import { useNavigate } from "react-router-dom";
 
 const Event = () => {
   const [count, setCount] = useState(3);
+  const navigate = useNavigate();
+
+  const handleClickDetail = () => {
+    navigate(`/Detail`);
+  };
 
   const toggleLoadMore = () => {
     setCount(count === 3 ? 6 : 3);
@@ -10,7 +16,9 @@ const Event = () => {
 
   return (
     <div name="event" className="max-w-[1240px] px-5 mx-auto items-center">
-      <h1 className="pb-5 pt-28 text-5xl font-bold text-center">Event</h1>
+      <h1 className="pb-5 pt-28 text-5xl font-bold text-center">
+        News & Event
+      </h1>
       <div className="flex mx-auto justify-between">
         <div
           data-aos-offset="400"
@@ -23,6 +31,7 @@ const Event = () => {
                 <div
                   class="relative max-w-[1240px] border border-gray-200 rounded-lg shadow overflow-hidden"
                   key={index}
+                  onClick={() => handleClickDetail()}
                 >
                   <a href="#">
                     <img
