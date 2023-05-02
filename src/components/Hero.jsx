@@ -9,7 +9,7 @@ import {
   ServerIcon,
 } from "@heroicons/react/solid";
 
-import bgImg from "../assets/img.png";
+import bgImg from "../assets/cek.png";
 
 let easeing = [0.6, -0.05, 0.01, 0.99];
 const stagger = {
