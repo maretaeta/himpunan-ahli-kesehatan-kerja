@@ -41,7 +41,7 @@ const Support = () => {
           <div
             data-aos-offset="400"
             data-aos="fade-up"
-            className="bg-white rounded-xl shadow-2xl"
+            className="bg-white rounded-xl shadow-2xl pb-8"
           >
             <div className="p-8">
               <PhoneIcon className="w-16 p-4 bg-green-500 text-white rounded-lg mt-[-4rem]" />
@@ -52,17 +52,11 @@ const Support = () => {
                 iste quibusdam exercitationem.
               </p>
             </div>
-            <div className="bg-slate-100 pl-8 py-4">
-              <p className="flex items-center text-green-500">
-                More
-                <ArrowSmRightIcon className="w-5 ml-2" />
-              </p>
-            </div>
           </div>
           <div
             data-aos-offset="400"
             data-aos="fade-up"
-            className="bg-white rounded-xl shadow-2xl"
+            className="bg-white rounded-xl shadow-2xl pb-8"
           >
             <div className="p-8">
               <SupportIcon className="w-16 p-4 bg-green-500 text-white rounded-lg mt-[-4rem]" />
@@ -73,16 +67,11 @@ const Support = () => {
                 iste quibusdam exercitationem.
               </p>
             </div>
-            <div className="bg-slate-100 pl-8 py-4">
-              <p className="flex items-center text-green-500">
-                More <ArrowSmRightIcon className="w-5 ml-2" />
-              </p>
-            </div>
           </div>
           <div
             data-aos-offset="400"
             data-aos="fade-up"
-            className="bg-white rounded-xl shadow-2xl"
+            className="bg-white rounded-xl shadow-2xl pb-8"
           >
             <div className="p-8">
               <ChipIcon className="w-16 p-4 bg-green-500 text-white rounded-lg mt-[-4rem]" />
@@ -91,11 +80,6 @@ const Support = () => {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Excepturi provident iure placeat blanditiis ea sint earum hic
                 iste quibusdam exercitationem.
-              </p>
-            </div>
-            <div className="bg-slate-100 pl-8 py-4">
-              <p className="flex items-center text-green-500">
-                More <ArrowSmRightIcon className="w-5 ml-2" />
               </p>
             </div>
           </div>

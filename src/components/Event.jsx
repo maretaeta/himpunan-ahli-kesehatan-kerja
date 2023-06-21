@@ -55,7 +55,7 @@ const Event = () => {
       </div>
       <div className="pt-10 flex flex-row gap-2 justify-center">
         <button
-          className="rounded-md px-7 py-3 items-center text-center bg-[#007936]"
+          className="rounded-md px-7 py-3 items-center text-center "
           onClick={() => toggleLoadMore()}
         >
           <p>{count === 3 ? "Show More" : "More Less"}</p>

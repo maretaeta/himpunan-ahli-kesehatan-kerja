@@ -13,7 +13,7 @@ const FormInput = (props) => {
   return (
     <div className="formInput flex flex-col max-w-md justify-center mx-auto" >
       <label className="text-gray-600 pt-2">{label}</label>
-      <input className="border-gray-500 border w-72 p-3 mx-auto rounded-md"
+      <input className="border-gray-500 border sm:w-72 w-56 p-3 mx-auto rounded-md"
         {...inputProps}
         onChange={onChange}
         onBlur={handleFocus}

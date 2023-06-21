@@ -1,14 +1,9 @@
-import React from "react";
+import { useNavigate } from "react-router-dom";
 import { useSpring, animated } from "react-spring";
 import { motion } from "framer-motion";
-
 import {
   CloudUploadIcon,
-  DatabaseIcon,
-  PaperAirplaneIcon,
-  ServerIcon,
 } from "@heroicons/react/solid";
-
 import bgImg from "../assets/cek.png";
 
 let easeing = [0.6, -0.05, 0.01, 0.99];
@@ -66,21 +61,28 @@ function Number({ n }) {
   return <animated.div>{number.to((n) => n.toFixed(0))}</animated.div>;
 }
 
+
+
 const Hero = () => {
+  const navigate = useNavigate();
+  const handleClickDaftar = () => {
+    navigate(`/Registered`);
+  };
   return (
     <div name="home" className="bg-gray-100">
-      <div className="grid md:grid-cols-2 max-w-7xl mx-5 lg:mx-7">
+      <div className="grid md:grid-cols-2 xl:mx-auto max-w-7xl mx-7">
         <div className="flex flex-col justify-center sm:items-cente w-full px-2 py-8">
           <div
             data-aos="fade-right"
-            className="py-3 text-4xl md:text-6xl font-bold text-center md:text-left"
+            className="py-3 text-4xl lg:text-6xl font-bold text-center md:text-left"
           >
             Perhimpunan Ahli Kesehatan Kerja Indonesia
           </div>
           <div className="grid grid-cols-1 justify-items-center sm:justify-items-start md:pt-3 md:pb-6 h-9">
             <button
               data-aos="zoom-in"
-              className="bg-[#007936]  md:py-3 md:px-16 px-9"
+              className="mx-auto md:py-3 lg:mx-0 md:px-16 px-9"
+              onClick={() => handleClickDaftar()}
             >
               Daftar
             </button>

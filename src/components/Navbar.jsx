@@ -132,16 +132,13 @@ const Navbar = () => {
         </div>
         <div className="hidden md:flex pr-4">
           <button
-            className="border-[#007936]  px-4 py-2 h-11 bg-transparent text-[#007936] mr-4"
+            className=" px-4 py-2 h-11 text-green-400 hover:bg-green-400 hover:text-white bg-transparent mr-4"
             onClick={() => handleClickRegis()}
           >
-            SigIn
+            Daftar
           </button>
-          <button
-            className="px-4 py-2 h-11 bg-[#007936]"
-            onClick={() => handleClickLogin()}
-          >
-            LogIn
+          <button className="px-4 py-2 h-11" onClick={() => handleClickLogin()}>
+            Masuk
           </button>
         </div>
         <div className="md:hidden mr-4" onClick={handleClick}>
@@ -201,10 +198,10 @@ const Navbar = () => {
         </li>
 
         <div className="flex flex-col my-4">
-          <button className="bg-transparent text-[#007936] border-[#007936] px-8 py-3 mb-4">
-            Sign In
+          <button onClick={()=> handleClickLogin()} className="px-8 mb-4 py-3">Log In</button>
+          <button onClick={()=> handleClickRegis()} className="text-green-500 hover:bg-green-500 hover:text-white bg-transparent  px-8 py-3">
+            Sign Up
           </button>
-          <button className="px-8 py-3 bg-[#007936]">Sign Up</button>
         </div>
       </ul>
     </motion.div>

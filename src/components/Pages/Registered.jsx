@@ -1,8 +1,14 @@
 import { useState } from "react";
-
+import logo from "../../assets/pakki.png";
 import FormInput from "./FormInput";
+import { useNavigate } from "react-router-dom";
 
-const App = () => {
+const Registered = () => {
+  const navigate = useNavigate();
+  const handleClickHome = () => {
+    navigate(`/`);
+  };
+
   const [values, setValues] = useState({
     username: "",
     email: "",
@@ -71,9 +77,13 @@ const App = () => {
   };
 
   return (
-    <div className="app shadow-xl mt-20 mx-auto flex justify-center max-w-md rounded-md py-5 bg-gray-200">
+    <div className="app shadow-xl mt-20 md:mx-auto flex justify-center max-w-xl mx-7 rounded-md py-5 bg-gray-200">
       <form onSubmit={handleSubmit}>
-        <h1 className="text-center text-2xl font-bold text-black">Register</h1>
+        <img src={logo} className="mx-auto py-5" />
+        <h1 className="text-center text-3xl font-bold text-black">
+          Registered
+        </h1>
+
         {inputs.map((input) => (
           <FormInput
             key={input.id}
@@ -82,12 +92,16 @@ const App = () => {
             onChange={onChange}
           />
         ))}
-        <button className="mt-5 mx-auto flex py-2 px-5 text-xl bg-[#007936] ">
-          Submit
-        </button>
+        <button className="mt-5 mx-auto flex py-2 px-5 text-xl">Submit</button>
+        <div className="md:flex gap-2 pt-3 text-sm mx-5">
+          <p>kembali ke halaman utama ? </p>
+          <p onClick={() => handleClickHome()} className="text-blue-600">
+            Home
+          </p>
+        </div>
       </form>
     </div>
   );
 };
 
-export default App;
+export default Registered;
