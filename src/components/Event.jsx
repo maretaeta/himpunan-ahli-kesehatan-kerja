@@ -1,3 +1,5 @@
+/** @format */
+
 import React, { useState } from "react";
 import data from "../components/data";
 import { useNavigate } from "react-router-dom";
