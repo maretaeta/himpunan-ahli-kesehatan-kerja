@@ -19,7 +19,7 @@ const Event = () => {
   return (
     <div name="event" className="max-w-[1240px] px-5 mx-auto items-center">
       <h1 className="pb-5 pt-28 text-5xl font-bold text-center">
-        News & Events
+        News & Event
       </h1>
       <div className="flex mx-auto justify-between">
         <div
